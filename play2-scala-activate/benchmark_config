@@ -1,5 +1,5 @@
 {
-  "framework": "play-activate-mysql",
+  "framework": "play2-scala-activate",
   "tests": [{
     "default": {
       "setup_file": "setup",
@@ -18,7 +18,7 @@
       "webserver": "None",
       "os": "Linux",
       "database_os": "Linux",
-      "display_name": "play-scala-activate",
+      "display_name": "play2-scala-activate",
       "notes": "",
       "versus": "netty"
     }
