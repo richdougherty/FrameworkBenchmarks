@@ -1,0 +1,41 @@
+{
+  "framework": "play2-scala",
+  "tests": [{
+    "default": {
+      "setup_file": "setup",
+      "json_url": "/json",
+      "port": 9000,
+      "approach": "Realistic",
+      "classification": "Fullstack",
+      "database": "None",
+      "framework": "play2",
+      "language": "Scala",
+      "orm": "None",
+      "platform": "Netty",
+      "webserver": "None",
+      "os": "Linux",
+      "database_os": "Linux",
+      "display_name": "play2-scala",
+      "notes": "",
+      "versus": "netty"
+    },
+    "windows-default": {
+      "setup_file": "setup",
+      "json_url": "/json",
+      "port": 9000,
+      "approach": "Realistic",
+      "classification": "Fullstack",
+      "database": "None",
+      "framework": "play2",
+      "language": "Scala",
+      "orm": "None",
+      "platform": "Netty",
+      "webserver": "None",
+      "os": "Windows",
+      "database_os": "Linux",
+      "display_name": "play-scala2-windows",
+      "notes": "",
+      "versus": "netty"
+    }
+  }]
+}

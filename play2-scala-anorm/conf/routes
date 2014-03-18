@@ -3,7 +3,6 @@
 # ~~~~
 
 # Home page
-GET     /json                           controllers.Application.json
 GET     /db                             controllers.Application.db(queries: Int ?= 1)
 GET     /fortunes                       controllers.Application.fortunes
 GET     /update                         controllers.Application.update(queries: Int ?= 1)

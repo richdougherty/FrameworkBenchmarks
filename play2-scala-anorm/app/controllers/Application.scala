@@ -36,11 +36,6 @@ object Application extends Controller {
   // adequate in order to throttle the acceptance of requests to the size of the pool.
   def isDbAvailable: Boolean = tpe.getQueue.size() < maxConnections * MaxQueriesPerRequest
 
-
-  def json() = Action {
-    Ok(Json.obj("message" -> "Hello, World!"))
-  }
-
   def db(queries: Int) = PredicatedAction(isDbAvailable, ServiceUnavailable) {
     Action.async {
       val random = ThreadLocalRandom.current()

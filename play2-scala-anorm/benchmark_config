@@ -1,9 +1,8 @@
 {
-  "framework": "play-scala",
+  "framework": "play2-scala-anorm",
   "tests": [{
     "default": {
       "setup_file": "setup",
-      "json_url": "/json",
       "db_url": "/db",
       "query_url": "/db?queries=",
       "fortune_url": "/fortunes",
@@ -19,13 +18,12 @@
       "webserver": "None",
       "os": "Linux",
       "database_os": "Linux",
-      "display_name": "play-scala-anorm",
+      "display_name": "play2-scala-anorm",
       "notes": "",
       "versus": "netty"
     },
     "windows-default": {
       "setup_file": "setup",
-      "json_url": "/json",
       "db_url": "/db",
       "query_url": "/db?queries=",
       "fortune_url": "/fortunes",
@@ -41,7 +39,7 @@
       "webserver": "None",
       "os": "Windows",
       "database_os": "Linux",
-      "display_name": "play-scala-anorm",
+      "display_name": "play2-scala-anorm-windows",
       "notes": "",
       "versus": "netty"
     }
