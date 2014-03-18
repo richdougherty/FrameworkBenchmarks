@@ -1,4 +1,4 @@
-name := "play-java"
+name := "play2-java-ebean"
 
 version := "1.0-SNAPSHOT"
 

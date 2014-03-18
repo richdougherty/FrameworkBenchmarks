@@ -1,8 +1,6 @@
 package controllers;
 
 import akka.dispatch.ExecutionContexts;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import models.World;
 import play.Play;
 import play.core.NamedThreadFactory;
@@ -24,8 +22,6 @@ public class Application extends Controller {
 
     private static final int MAX_QUERIES_PER_REQUEST = 20;
     private static final int TEST_DATABASE_ROWS = 10000;
-    //http://stackoverflow.com/questions/3907929/should-i-make-jacksons-objectmapper-as-static-final
-    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
     private static final int partitionCount = Play.application().configuration().getInt("db.default.partitionCount");
     private static final int maxConnections =
@@ -49,12 +45,6 @@ public class Application extends Controller {
         public boolean condition() {
             return tpe.getQueue().size() < maxConnections * MAX_QUERIES_PER_REQUEST;
         }
-    }
-
-    public static Result json() {
-        final ObjectNode result = OBJECT_MAPPER.createObjectNode();
-        result.put("message", "Hello, World!");
-        return ok(result);
     }
 
     @Predicated(predicate = IsDbAvailable.class, failed = SERVICE_UNAVAILABLE)

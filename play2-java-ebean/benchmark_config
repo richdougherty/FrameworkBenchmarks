@@ -1,9 +1,8 @@
 {
-  "framework": "play2",
+  "framework": "play2-java-ebean",
   "tests": [{
     "default": {
       "setup_file": "setup",
-      "json_url": "/json",
       "db_url": "/db",
       "query_url": "/db?queries=",
       "port": 9000,
@@ -17,9 +16,9 @@
       "webserver": "None",
       "os": "Linux",
       "database_os": "Linux",
-      "display_name": "play-java-ebean",
+      "display_name": "play2-java-ebean",
       "notes": "",
       "versus": "netty"
-    }
+    }z
   }]
 }

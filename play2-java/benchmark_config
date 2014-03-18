@@ -1,0 +1,23 @@
+{
+  "framework": "play2-java",
+  "tests": [{
+    "default": {
+      "setup_file": "setup",
+      "json_url": "/json",
+      "port": 9000,
+      "approach": "Realistic",
+      "classification": "Fullstack",
+      "database": "None",
+      "framework": "play2",
+      "language": "Java",
+      "orm": "None",
+      "platform": "Netty",
+      "webserver": "None",
+      "os": "Linux",
+      "database_os": "Linux",
+      "display_name": "play2-java",
+      "notes": "",
+      "versus": "netty"
+    }
+  }]
+}
