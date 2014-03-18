@@ -1,5 +1,5 @@
 {
-  "framework": "play",
+  "framework": "play2-java-jpa",
   "tests": [{
     "jpa": {
       "setup_file": "setup",
@@ -16,7 +16,7 @@
       "webserver": "None",
       "os": "Linux",
       "database_os": "Linux",
-      "display_name": "play-java-jpa",
+      "display_name": "play2-java-jpa",
       "notes": "JPA alternate",
       "versus": "netty"
     }

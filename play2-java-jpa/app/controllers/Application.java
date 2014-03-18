@@ -50,13 +50,6 @@ public class Application extends Controller {
         }
     }
 
-    public static Result json() {
-        final ObjectNode result = OBJECT_MAPPER.createObjectNode();
-        result.put("message", "Hello World!");
-        return ok(result);
-    }
-
-
     @Predicated(predicate = IsDbAvailable.class, failed = SERVICE_UNAVAILABLE)
     public static F.Promise<Result> db(final Integer queries) {
         final Random random = ThreadLocalRandom.current();
